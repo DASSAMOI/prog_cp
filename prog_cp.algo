@@ -1,1 +1,25 @@
-FLOAT
+FUNCTION dot_product(v1,v2: ARRAY_OF INTEGER[3];) : INTEGER
+VAR
+    Ps : INTEGER;
+BEGIN
+    Ps:= v1*v2
+   IF (Ps=0) THEN
+    WRITE ("les vecteurs sont orthogonaux")
+   ELSE
+    WRITE ("Les vecteurs ne sont pas orthogonaux")
+   END_IF
+    RETURN value ;
+END
+
+
+ALGORITHM produit scalaire
+VAR
+    i,j,n:INTEGER;
+BEGIN
+    FOR i FROM 1 TO n STEP 1 DO
+    FOR j FROM 2 TO n STEP 1  DO
+       dot_product(Vi,vi);
+    END_FOR
+        
+    END_FOR
+END
